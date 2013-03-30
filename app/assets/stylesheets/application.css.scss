@@ -1,0 +1,27 @@
+   // PROTIP:
+   /*
+    When using bootstrap-sass, it's recommended to avoid sprockets in your
+    stylesheets. In order to do that you simply rename your `application.css` file
+    to `application.css.scss`, remove all sprockets comments, and instead use sass
+    `@import` commands. These commands are smart enough to fully support asset
+    pipeline load paths, thanks to `sass-rails` gem.
+   */ 
+
+    // First import journal variables
+    @import "bootswatch/spacelab/variables";
+
+    // Then bootstrap itself
+    @import "bootstrap";
+
+    // Bootstrap body padding for fixed navbar
+    body { padding-top: 60px; }
+
+    // Responsive styles go here in case you want them
+    @import "bootstrap-responsive";
+
+    // And finally bootswatch style itself
+    @import "bootswatch/spacelab/bootswatch";
+
+   /*
+    *  Whatever application styles Go here
+    */
