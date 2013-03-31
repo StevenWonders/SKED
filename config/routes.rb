@@ -1,5 +1,5 @@
 SKED::Application.routes.draw do
-  get "home/home"
+  #get "home/home"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

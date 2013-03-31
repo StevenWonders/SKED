@@ -1,24 +1,45 @@
-   // PROTIP:
-   /*
-    When using bootstrap-sass, it's recommended to avoid sprockets in your
-    stylesheets. In order to do that you simply rename your `application.css` file
-    to `application.css.scss`, remove all sprockets comments, and instead use sass
-    `@import` commands. These commands are smart enough to fully support asset
-    pipeline load paths, thanks to `sass-rails` gem.
-   */ 
+// PROTIP:
+/*
+When using bootstrap-sass, it's recommended to avoid sprockets in your
+stylesheets. In order to do that you simply rename your `application.css` file
+to `application.css.scss`, remove all sprockets comments, and instead use sass
+`@import` commands. These commands are smart enough to fully support asset
+pipeline load paths, thanks to `sass-rails` gem.
+*/ 
 
-    // First import journal variables
-    @import "bootswatch/spacelab/variables";
+// First import journal variables
+@import "bootswatch/spacelab/variables";
 
-    // Then bootstrap itself
-    @import "bootstrap";
+// Then bootstrap itself
+@import "bootstrap";
 
-    // Responsive styles go here in case you want them
-    @import "bootstrap-responsive";
+// Responsive styles go here in case you want them
+@import "bootstrap-responsive";
 
-    // And finally bootswatch style itself
-    @import "bootswatch/spacelab/bootswatch";
+// And finally bootswatch style itself
+@import "bootswatch/spacelab/bootswatch";
 
-   /*
-    *  Whatever application styles Go here
-    */
+/*
+*  Whatever application styles Go here
+*/
+
+/* Used to center navbar - Design decision
+
+.center.navbar .nav,
+.center.navbar .nav > li {
+    float:none;
+    display:inline-block;
+    *display:inline;                    
+    *zoom:1;                            
+    vertical-align: top;
+}
+
+.center .navbar-inner {
+    text-align:center;
+}
+
+.center .dropdown-menu {
+    text-align: left;
+}
+
+*/
