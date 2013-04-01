@@ -22,9 +22,9 @@ pipeline load paths, thanks to `sass-rails` gem.
 /*
 *  Whatever application styles Go here
 */
+@import "home"
 
 /* Used to center navbar - Design decision
-
 .center.navbar .nav,
 .center.navbar .nav > li {
     float:none;
@@ -41,5 +41,4 @@ pipeline load paths, thanks to `sass-rails` gem.
 .center .dropdown-menu {
     text-align: left;
 }
-
 */

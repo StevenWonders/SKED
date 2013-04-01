@@ -3,10 +3,9 @@
   <head>
     <title>SKED</title>
     <%= stylesheet_link_tag    "application", :media => "all" %>
-    <%= yield :stylesheet_includes %>
-    <%= javascript_include_tag "application" %>
-    <%= yield :javascript_includes %>
+    <%= javascript_include_tag "application" %>  
     <%= csrf_meta_tags %>
+    <%= yield :includes %>
   </head>
   <body>
     <%= yield %>

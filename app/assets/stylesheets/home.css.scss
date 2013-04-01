@@ -1,3 +1,30 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* --- left Content --- */
+label { 
+    display: inline-block;   
+    width: 115px;
+    text-align: right;
+}​
+
+/* This needs to be here. Rails bug it looks like */
+{}
+
+.left-input-btn{ 
+    width: 170px !important;
+    height: 32px; 
+    font-size: 13px;
+    display: inline-block; 
+}
+
+.left-input{
+    width: 80px
+}
+
+
+
+/* --- Center Content --- */
+
+/* --- Right Content --- */

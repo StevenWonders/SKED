@@ -1,42 +1,52 @@
-<% content_for :javascript_includes do %>
-  <%= stylesheet_link_tag "home" %>
-<% end %>
-
 <div>
   <!-- Course Selection -->
   <div class="well" >
     <h4 align="center">Course Selection</h4>
     <form action="add_course" method="post" accept-charset="UTF-8">
-      <label style="display:block">Course Name: </label>
-      <input id="course_name" type="text" name="course[name]"/>
-      <label style="display:block">Course Number: </label>
-      <input id="course_number" type="text" name="course[number]"/>
-      <p>Session: </p>
-      <div class="btn-group" data-toggle="buttons-radio" style="clear: left; width: 100%; height: 32px; font-size: 13px; padding-bottom: 16px;">
-        <input class="btn" type="button" name="course[session]" value="F" style="width: 25%"/>
-        <input class="btn" type="button" name="course[session]" value="F/W" style="width: 25%"/>
-        <input class="btn" type="button" name="course[session]" value="W" style="width: 25%"/>
-        <input class="btn" type="button" name="course[session]" value="S" style="width: 25%"/>
+      <div class="block" align="center">
+        <label>Course Name:</label>
+        <input id="course_name" class="left-input" type="text" name="course[name]"/>
       </div>
-      <input class="btn btn-success input-block-level" style="margin: 0 auto; width: 100%; height: 32px; font-size: 13px;"
-              type="submit" name="addCourseBtn" value="Add Course" />   
+      <div class="block" align="center">
+        <label>Course Number:</label>
+        <input id="course_number" class="left-input" type="text" name="course[number]"/>
+      </div>
+      <div class="block">
+        <p align="center">Session</p>
+        <div class="btn-group" data-toggle="buttons-radio" style="width: 100%; height: 32px; font-size: 13px; padding-bottom: 16px;">
+          <input class="btn" type="button" name="course[session]" value="F" style="width: 25%"/>
+          <input class="btn" type="button" name="course[session]" value="F/W" style="width: 25%"/>
+          <input class="btn" type="button" name="course[session]" value="W" style="width: 25%"/>
+          <input class="btn" type="button" name="course[session]" value="S" style="width: 25%"/>
+        </div>
+      </div>
+      <div align="center">
+        <input class="btn btn-success input-block-level left-input-btn"
+              type="submit" name="addCourseBtn" value="Add Course" /> 
+        <input class="btn btn-danger input-block-level left-input-btn"
+            type="button" name="removeCourseBtn" value="Remove Course" disabled="true" />
+      </div>
     </form>
-    <input class="btn btn-danger input-block-level" style="margin: 0 auto; width: 100%; height: 32px; font-size: 13px;"
-           type="button" name="removeCourseBtn" value="Remove Course" disabled="true" />
   </div>
   
   <!-- Time Constraint Selection -->
   <div class="well" >
     <h4 align="center">Time Constraints</h4>
     <form action="add_time_constraint" method="post" accept-charset="UTF-8">
-      <p>Start Time: </p>
-      <input id="course_name" type="text" name="constraint[startTime]"/>
-      <p>End Time: </p>
-      <input id="course_number" type="text" name="constraint[endTime]" style="padding-bottom: 16px;"/>
-      <input class="btn btn-success input-block-level" style="margin: 0 auto; width: 100%; height: 32px; font-size: 13px;"
-              type="submit" name="addTimeConstraintBtn" value="Add Time Constraint" />
+      <div class="block" align="center">
+        <label style="width:75px;">Start Time: </label>
+        <input id="course_name" class="left-input" type="text" name="constraint[startTime]"/>
+      </div>
+      <div class="block" align="center">
+        <label style="width:75px;">End Time: </label>
+        <input id="course_number" class="left-input" type="text" name="constraint[endTime]"/>
+      </div>
+      <div align="center">
+        <input class="btn btn-success input-block-level left-input-btn"
+                type="submit" name="addTimeConstraintBtn" value="Add Time Constraint" /> 
+        <input class="btn btn-danger input-block-level left-input-btn" 
+            type="button" name="removeTimeConstraintBtn" value="Remove Time Constraint" disabled="true" />
+      </div>
     </form>
-    <input class="btn btn-danger input-block-level" style="margin: 0 auto; width: 100%; height: 32px; font-size: 13px;"
-           type="button" name="removeTimeConstraintBtn" value="Remove Time Constraint" disabled="true" />
   </div>
 </div>
