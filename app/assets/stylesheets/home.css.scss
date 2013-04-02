@@ -27,4 +27,15 @@ label {
 
 /* --- Center Content --- */
 
+
+
+
 /* --- Right Content --- */
+table{
+    table-layout: fixed;
+    min-width: 260px;
+}
+
+th{
+    text-align: center;
+}
